@@ -3,12 +3,12 @@
 
 name: Node.js CI
 
-permissions:
-  contents: read|write
-
 on:
   push:
     branches: [ "*", "!main" ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
