@@ -22,6 +22,11 @@ jobs:
       with:
         fetch-depth: 0
         ref: main
+    - uses: pr-mpt/actions-merge-branch@v2
+      with:
+        from: ${{ github.ref }}
+        commit: false
+        push: false
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
