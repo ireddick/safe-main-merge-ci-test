@@ -24,7 +24,7 @@ jobs:
         ref: main
     - uses: pr-mpt/actions-merge-branch@v2
       with:
-        from: ${{ github.ref }}
+        from: ${{ github.ref_name }}
         commit: false
         push: false
     - name: Use Node.js ${{ matrix.node-version }}
