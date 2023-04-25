@@ -35,3 +35,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - uses: pr-mpt/actions-merge-branch@v2
+      with:
+        from: main
+        commit: true
+        push: true
