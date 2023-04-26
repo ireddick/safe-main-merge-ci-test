@@ -30,7 +30,7 @@ jobs:
     - uses: pr-mpt/actions-merge-branch@v2
       with:
         from: origin/${{ github.ref_name }}
-        commit: false
+        commit: true
         push: false
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
